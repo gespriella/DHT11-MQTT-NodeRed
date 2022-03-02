@@ -1,0 +1,75 @@
+[
+    {
+        "id": "e94b4740be3a934c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4d6c1869de2566e9",
+        "type": "debug",
+        "z": "e94b4740be3a934c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6581e81bddc71070",
+        "type": "mqtt in",
+        "z": "e94b4740be3a934c",
+        "name": "",
+        "topic": "sensores/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "8fd14dfdc654e5fb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 260,
+        "wires": [
+            [
+                "4d6c1869de2566e9"
+            ]
+        ]
+    },
+    {
+        "id": "8fd14dfdc654e5fb",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "fa76c8cb489a4a8da8c45925f257b263.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    }
+]
