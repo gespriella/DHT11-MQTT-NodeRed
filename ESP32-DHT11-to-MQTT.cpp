@@ -40,7 +40,7 @@ void updateReadings(){
 }
 
 void setup() {
-	Serial.begin(115200);
+  Serial.begin(115200);
   dht.begin();
   WiFi.begin(ssid, wifiPassword);
   while (WiFi.status() != WL_CONNECTED) {
